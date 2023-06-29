@@ -87,7 +87,7 @@ const ChatbotMessage = ({
     <ConditionallyRender
       condition={show}
       show={
-        <div className="react-chatbot-kit-chat-bot-message-container">
+        <div className="kit-chat-bot-message-container">
           <ConditionallyRender
             condition={withAvatar}
             show={
@@ -107,7 +107,7 @@ const ChatbotMessage = ({
             })}
             elseShow={
               <div
-                className="react-chatbot-kit-chat-bot-message"
+                className="kit-chat-bot-message"
                 style={chatBoxCustomStyles}
               >
                 <ConditionallyRender
@@ -119,7 +119,7 @@ const ChatbotMessage = ({
                   condition={withAvatar}
                   show={
                     <div
-                      className="react-chatbot-kit-chat-bot-message-arrow"
+                      className="kit-chat-bot-message-arrow"
                       style={arrowCustomStyles}
                     ></div>
                   }

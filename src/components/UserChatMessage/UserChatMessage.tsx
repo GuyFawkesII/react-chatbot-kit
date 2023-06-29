@@ -18,16 +18,16 @@ const UserChatMessage = ({
   customComponents,
 }: IUserChatMessageProps) => {
   return (
-    <div className="react-chatbot-kit-user-chat-message-container">
+    <div className="kit-user-chat-message-container">
       <ConditionallyRender
         condition={!!customComponents.userChatMessage}
         show={callIfExists(customComponents.userChatMessage, {
           message,
         })}
         elseShow={
-          <div className="react-chatbot-kit-user-chat-message">
+          <div className="kit-user-chat-message">
             {message}
-            <div className="react-chatbot-kit-user-chat-message-arrow"></div>
+            <div className="kit-user-chat-message-arrow"></div>
           </div>
         }
       />
@@ -35,9 +35,9 @@ const UserChatMessage = ({
         condition={!!customComponents.userAvatar}
         show={callIfExists(customComponents.userAvatar)}
         elseShow={
-          <div className="react-chatbot-kit-user-avatar">
-            <div className="react-chatbot-kit-user-avatar-container">
-              <UserIcon className="react-chatbot-kit-user-avatar-icon" />
+          <div className="kit-user-avatar">
+            <div className="kit-user-avatar-container">
+              <UserIcon className="kit-user-avatar-icon" />
             </div>
           </div>
         }
