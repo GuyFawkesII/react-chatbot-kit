@@ -272,20 +272,20 @@ const Chat = ({
   }
 
   return (
-    <div className="kit-chat-container">
-      <div className="kit-chat-inner-container">
+    <div className="chat-container">
+      <div className="chat-inner-container">
         <ConditionallyRender
           condition={!!customComponents.header}
           show={
             customComponents.header && customComponents.header(actionProvider)
           }
           elseShow={
-            <div className="kit-chat-header">{header}</div>
+            <div className="chat-header">{header}</div>
           }
         />
 
         <div
-          className="kit-chat-message-container"
+          className="chat-message-container"
           ref={chatContainerRef}
         >
           <ConditionallyRender
@@ -303,22 +303,22 @@ const Chat = ({
           <div style={{ paddingBottom: '15px' }} />
         </div>
 
-        <div className="kit-chat-input-container">
+        <div className="chat-input-container">
           <form
-            className="kit-chat-input-form"
+            className="chat-input-form"
             onSubmit={handleSubmit}
           >
             <input
-              className="kit-chat-input"
+              className="chat-input"
               placeholder={placeholder}
               value={input}
               onChange={(e) => setInputValue(e.target.value)}
             />
             <button
-              className="kit-chat-btn-send"
+              className="chat-btn-send"
               style={customButtonStyle}
             >
-              <ChatIcon className="kit-chat-btn-send-icon" />
+              <ChatIcon className="chat-btn-send-icon" />
             </button>
           </form>
         </div>

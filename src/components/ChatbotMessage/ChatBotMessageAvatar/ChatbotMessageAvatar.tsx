@@ -2,9 +2,9 @@ import React from 'react';
 
 const ChatbotMessageAvatar = () => {
   return (
-    <div className="kit-chat-bot-avatar">
-      <div className="kit-chat-bot-avatar-container">
-        <p className="kit-chat-bot-avatar-letter">B</p>
+    <div className="chat-bot-avatar">
+      <div className="chat-bot-avatar-container">
+        <p className="chat-bot-avatar-letter">B</p>
       </div>
     </div>
   );

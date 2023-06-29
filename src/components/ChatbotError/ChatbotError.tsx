@@ -10,11 +10,11 @@ interface IChatbotErrorProps {
 
 const ChatbotError = ({ message }: IChatbotErrorProps) => {
   return (
-    <div className="kit-error">
-      <h1 className="kit-error-header">
+    <div className="error">
+      <h1 className="error-header">
         Ooops. Something is missing.
       </h1>
-      <div className="kit-error-container">
+      <div className="error-container">
         <ChatbotMessage
           message={message}
           withAvatar
@@ -25,10 +25,10 @@ const ChatbotError = ({ message }: IChatbotErrorProps) => {
         />
       </div>
       <a
-        href="https://fredrikoseberg.github.io/kit-docs/"
+        href="https://fredrikoseberg.github.io/docs/"
         rel="noopener norefferer"
         target="_blank"
-        className="kit-error-docs"
+        className="error-docs"
       >
         View the docs
       </a>

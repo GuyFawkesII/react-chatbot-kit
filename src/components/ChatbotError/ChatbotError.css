@@ -1,20 +1,20 @@
-.kit-error {
+.error {
   background-color: #fff;
   border-radius: 3px;
   padding: 15px;
 }
 
-.kit-error-container {
+.error-container {
   width: 260px;
 }
 
-.kit-error-header {
+.error-header {
   font-size: 1.3rem;
   color: #1d1d1d;
   margin-bottom: 30px;
 }
 
-.kit-error-docs {
+.error-docs {
   display: block;
   margin: 25px auto;
   color: rgb(56, 104, 139);
